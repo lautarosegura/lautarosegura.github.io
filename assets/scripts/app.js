@@ -56,7 +56,7 @@ function calculateFare(distance, nightTime, withReturn) {
     const baseFare = 160;
     const pricePerKilometer = distance > 10 ? 130 : 140;
     const nightTimeSurcharge = 0.15;
-    const extraSurcharge = 0.07;
+    const extraSurcharge = 0.06;
     const shortReturnSurcharge = 1;
     const longReturnSurcharge = 0.3;
 
