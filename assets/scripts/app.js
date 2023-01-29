@@ -1,3 +1,5 @@
+//AIzaSyCcQeM1pOjId32zqL2zWiPXIwTbAPg1nLs
+
 $(document).ready(function() {
     $('#fare-calculator').submit(function(event) {
         event.preventDefault();
