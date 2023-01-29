@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <title>Fare Calculator</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-9">
+            <h1 class="text-center">Calculadora</h1>
+      <form id="fare-calculator">
+        <div class="form-group">
+          <label for="distance">Distancia (en kilometros):</label>
+          <input
+            type="number"
+            class="form-control"
+            id="distance"
+            placeholder="Ingresa la distancia"
+            step="0.1"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="night-time"
+          />
+          <label class="form-check-label" for="night-time">Tarifa nocturna</label>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="return" />
+          <label class="form-check-label" for="return">Retorno</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+        <button class="btn btn-danger" id="clear">Limpiar</button>
+      </form>
+      <h2 id="result" class="text-center"></h2>
+          </div>
+          <div class="col-md-3">
+            <h5>Viajes frecuentes</h5>
+            <ul class="list-group">
+              <li class="list-group-item"><a data-target="lp-ezeiza" class="shortcut">La Plata - Ezeiza</a></li>
+              <li class="list-group-item"><a data-target="ezeiza-lp" class="shortcut">Ezeiza - La Plata</a></li>
+              <li class="list-group-item"><a data-target="lp-aeroparque" class="shortcut">La Plata - Aeroparque</a></li>
+              <li class="list-group-item"><a data-target="aeroparque-lp" class="shortcut">Aeroparque - La Plata</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    ></script>
+    <script src="assets/scripts/app.js" defer></script>
+    </body>
+</html>
