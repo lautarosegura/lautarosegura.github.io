@@ -1,0 +1,72 @@
+body {
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 100px auto;
+    max-height: 500px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ccc;
+    overflow-y: auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="checkbox"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  #result {
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #4CAF50;
+  }
+
+  .shortcut:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .active {
+    background-color: #f2f2f2;
+  }
+
+  #clear:hover {
+    background-color: #ff0000;
+  }
+  
