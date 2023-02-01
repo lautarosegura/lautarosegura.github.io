@@ -1,4 +1,9 @@
-//AIzaSyCcQeM1pOjId32zqL2zWiPXIwTbAPg1nLs
+//AIzaSyCcQe
+
+
+//M1pOjId32zq
+
+//L2zWiPXIwTbAPg1nLsasdasd
 
 $(document).ready(function() {
     $('#fare-calculator').submit(function(event) {
