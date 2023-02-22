@@ -60,8 +60,8 @@ $(document).ready(function() {
 
 
 function calculateFare(distance, nightTime, withReturn) {
-    const baseFare = 160;
-    const pricePerKilometer = distance > 10 ? 130 : 140;
+    const baseFare = 200;
+    const pricePerKilometer = distance > 10 ? 170 : 180;
     const nightTimeSurcharge = 0.15;
     const extraSurcharge = 0.06;
     const shortReturnSurcharge = 1;
