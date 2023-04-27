@@ -68,7 +68,7 @@ function calculateFare(distance, nightTime, withReturn) {
 		if (distance <= 30) {
 			fare += fare * shortReturnSurcharge;
 		} else if (distance > 30 && distance < 100) {
-			fare += fare * longReturnSurcharge;
+			fare += fare * longReturnSurcharge - 200;
 		}
 	}
 
