@@ -57,18 +57,18 @@ $(document).ready(function () {
 });
 
 function calculateFare(distance, nightTime, withReturn) {
-	const baseFare = 200;
-	const pricePerKilometer = distance > 10 ? 170 : 180;
+	const baseFare = 300;
+	const pricePerKilometer = distance > 10 ? 190 : 200;
 	const nightTimeSurcharge = 0.15;
 	const shortReturnSurcharge = 1;
 	const longReturnSurcharge = 0.3;
 
-	let fare = baseFare + distance * pricePerKilometer;
+	let fare = distance * pricePerKilometer;
 	if (withReturn) {
 		if (distance <= 30) {
 			fare += fare * shortReturnSurcharge;
 		} else if (distance > 30 && distance < 100) {
-			fare += fare * longReturnSurcharge - 200;
+			fare += fare * longReturnSurcharge;
 		}
 	}
 
@@ -76,5 +76,5 @@ function calculateFare(distance, nightTime, withReturn) {
 		fare += fare * nightTimeSurcharge;
 	}
 
-	return fare;
+	return fare + baseFare;
 }
